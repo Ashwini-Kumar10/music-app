@@ -185,6 +185,7 @@ h1
 	justify-content: space-around;
 }
 
+
 .left-content
 {
 	width:50%;
@@ -195,6 +196,8 @@ h1
 {
 	width:30%;
 }
+
+
 h4.heading
 {
 	text-align: center;
@@ -268,5 +271,97 @@ img { cursor: pointer; }
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+.left-content
+{
+	width:80vw;
+	margin-bottom: 100px;
+}
+
+
+.right-content
+{
+	width:80vw;
+	margin-top: -110px;
+}
+  .main-content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+#searchbox
+{
+	display: flex;
+	height:40px;
+	width:150px;
+	background-color: #2f2929;
+	border-radius:25px;
+	vertical-align: center;
+	padding:13px;
+	margin: 10px !important;
+	/*margin-right: -25px;*/
+}
+.artist img
+{
+	
+   width: 75px;
+   height: 75px;
+   border-radius: 50%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.Latest-releases
+{
+	margin-left: 20%;
+	display: flex;
+	flex-direction: row;
+	height: 300px;
+	width: 80%;
+	justify-content: space-between;
+	/*margin-bottom: 50px;*/
+	flex-wrap: wrap;
+	background-image: linear-gradient(270deg,#373131,#212155);
+	padding: 10px;
+	border-radius: 5px;
+	
+	
+}
+
+.profile
+{
+	height: 70px;
+	width:70px;
+	border-radius:100%;
+	margin-left:10px;
+	
+}
+
+.Latest-release
+{
+	
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+
+}
+#searchText
+{
+	height: 20px;
+	width:100%;
+	background-color: #2f2929;
+	border:none;
+	border-radius:25px;
+	font-size: 14px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+
 }
 
